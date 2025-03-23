@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Задание 2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Задание №2</h1>
+    </header>
+
+    <div class="main">
+        <p>
+            Загружаем файлы в каталоге files на веб-сервер через GIT с помощью PuTTY. Проверяем в браузере работоспособность index.php
+        </p>
+        <img src="putty.png" alt="Клиент PuTTY"><br>
+        <img src="index_php.png" alt="index.php работает!"><br>
+        <p>
+            Соединяемся c хостом kubsu-dev.ru по стандартному порту 80 в протокле сетевой печати RAW с помощью программы Putty 
+        </p>
+        <img src="connect.png" alt="raw connect"><br>
+        <p>
+            1. Получили главную страницу сайта kubsu-dev.ru методом GET в протоколе HTTP 1.0
+        </p>
+        <img src="1.png" alt="main page"><br>
+        <p>
+            2. Получили внутреннюю страницу сайта u68917.kubsu-dev.ru методом GET в протоколе HTTP 1.1
+        </p>
+        <img src="2.png" alt="insided page"><br>
+        <p>
+            3. Определяем информацию о файле file.tar.gz, не скачивая его, с помощью запроса HEAD. Информация содержится в заголовке ответа в графе "Content-Length" и состaвляет 11335 байт
+        </p>
+        <img src="3.png" alt="file.tar.gz information"><br>
+        <p>
+            4. Определяем медиатип расположенного на удаленном сервере ресурса /image.png с помощью HEAD запроса. Информация содержится в заголовке ответа в графе "Content-Type"
+        </p>
+        <img src="4.png" alt="/image.png information"><br>
+        <p>
+            5. Отправляем комментарий на сервер по адресу u68917.kubsu-dev.ru/files/task_2/index.php с помощью POST запроса в теле которого был указан сам комментарий.
+        </p>
+        <img src="5.png" alt="comment"><br>
+        <p>
+            6. Получаем первые 100 байт файла /file.tar.gz с помощью GET запроса с заголовком Range, в котором мы указываем, что нужно получить только первые 100 байт
+        </p>
+        <img src="6.png" alt="100 bites"><br>
+        <p>
+            7. Определяем кодировку ресурса /index.php с помощью запроса HEAD с заголовком Accept-Charset, в котором была установлена кодировка utf-8
+        </p>
+        <img src="7.png" alt="code"><br>
+
+
+    </div>
+
+    <footer>
+        <h3>
+        <p>Баринова А.В.  27/2</p>
+        </h3>
+    </footer>
+
+</body>
+</html>
